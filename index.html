@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SiteForge - Portfolio</title>
+  <title>SiteForge - Website Templates for Local Business</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -15,20 +15,70 @@
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="templates.html">Templates</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
-      <h1>Build Your Web Presence with SiteForge</h1>
-      <p>Modern, customizable templates to kickstart your portfolio.</p>
-      <button class="cta-btn btn btn-primary animate-cta" onclick="window.location.href='templates.html'">See Templates</button>
+      <h1>Grow Your Local Business Online</h1>
+      <p>Modern, affordable websites built for your niche. No hassle, just results.</p>
+      <a href="#cta" class="cta-btn btn btn-primary animate-cta">Get Started</a>
     </section>
+    <!-- About Section -->
     <section id="about" class="about-section">
-      <h2>About Me</h2>
-      <p>Hey! I’m Sasha, a web designer who loves building clean, modern sites that help you stand out. I make the process easy, friendly, and focused on what you need—no tech jargon, just results.</p>
+      <h2>About SiteForge</h2>
+      <p>SiteForge helps local businesses stand out online with beautiful, effective websites. Our mission is to make web design simple, fast, and affordable for everyone.</p>
+    </section>
+    <!-- Portfolio Preview Section -->
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio Preview</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="images/template-restaurant.jpg" alt="Modern Restaurant Template" />
+          <h3>Modern Restaurant</h3>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/template-fitness.jpg" alt="Fitness Studio Template" />
+          <h3>Fitness Studio</h3>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/template-consultant.jpg" alt="Consultant Template" />
+          <h3>Consultant</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Niche Buttons Section -->
+    <section id="niches" class="niche-section">
+      <h2>Choose Your Niche</h2>
+      <div class="niche-buttons">
+        <button class="niche-btn"><img src="images/template-restaurant.jpg" alt="Restaurant" /> Restaurant</button>
+        <button class="niche-btn"><img src="images/template-fitness.jpg" alt="Fitness" /> Fitness</button>
+        <button class="niche-btn"><img src="images/template-consultant.jpg" alt="Consultant" /> Consultant</button>
+        <button class="niche-btn"><img src="images/template-other.jpg" alt="Other" /> Other</button>
+      </div>
+    </section>
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+      <h2>Ready to Get Started?</h2>
+      <p>Contact us today and get a free, no-obligation quote for your new website.</p>
+      <a href="#contact" class="cta-btn btn btn-primary animate-cta">Get a free quote</a>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <form class="contact-form" autocomplete="off" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <small class="privacy-note">Your info stays private. No spam, ever.</small>
+      </form>
     </section>
   </main>
   <footer>
@@ -43,13 +93,13 @@
       <div class="footer-links mb-2">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
-        <a href="#templates">Templates</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
       <p class="mb-0">&copy; 2025 SiteForge. All rights reserved. <span class="built-by">Built by SiteForge</span></p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6DQD1p1UjE1Qn6ts6eZl6Yk5t1Q1L1R9V8Q+8WcQ6p6d" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
